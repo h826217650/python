@@ -1,3 +1,6 @@
+##twoSum
+思路
+```
 class Solution:
     def twoSum(self, nums, target):
         """
@@ -15,3 +18,4 @@ class Solution:
             else :
                 dnum[nums[i]] = i
             i = i + 1
+```
