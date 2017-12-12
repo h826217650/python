@@ -19,3 +19,4 @@ class Solution:
                 dnum[nums[i]] = i
             i = i + 1
 ```
+hahahhaha
