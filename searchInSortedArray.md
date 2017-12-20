@@ -1,4 +1,4 @@
-#在有序列表中查找target
+# 在有序列表中查找target
 ## 1 Search in rotated sorted array 
 ### * description
 Suppose a sorted array is rotated at some pivot unknown to you beforehand.
