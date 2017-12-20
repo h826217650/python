@@ -1,7 +1,9 @@
 #在有序列表中查找target
 ## 1 Search in rotated sorted array 
 ### * description
-Suppose a sorted array is rotated at some pivot unknown to you beforehand.(i.e.,               might become              ).You are given a target value to search. If found in the array return its index, otherwise return -1. You may assume no duplicate exists in the array.  
+Suppose a sorted array is rotated at some pivot unknown to you beforehand.
+(i.e.,               might become              ).
+You are given a target value to search. If found in the array return its index, otherwise return -1. You may assume no duplicate exists in the array.  
 ### *solution  
 分析数据：分界点前后数据都是有序的，可以采用二分法进行查找.（_真值表_）判断mid 处于哪部分。
 
@@ -16,7 +18,7 @@ def search(nums,target) :
 		if nums[l] <= nums[mid] :
 			if nums[low]> nums[high] and nums[mid] >target:
 				high = mid - 1
-			else
+			else :
 				high = mid -1
 		else :
 			if nums[high] >= nums[mid] :
