@@ -1,9 +1,9 @@
+# Remove from sorted array
+## 1 Remove Duplicates from Sorted Array
 
-# 1 Remove Duplicates from Sorted Array
-
-## *description
+### *description
 Given a sorted array, remove the duplicates in place such that each element appear only once and return the new length.Do not allocate extra space for another array, you must do this in place with constant memory.For example, Given input array            ,Your function should return length = 2, and A is now 
-## * solution
+### * solution
 ```
  def removeElement(nums) :  
   	l = 1  
@@ -17,9 +17,9 @@ Given a sorted array, remove the duplicates in place such that each element appe
   			
   	return l
 ```
-# 2 Remove Duplicates from Sorted Array
-## *description
-Follow up for ”Remove Duplicates”: What if duplicates are allowed at most twice? For example, Given sorted array                  ,Your function should return length = 5, and A is now            ## *solution  
+## 2 Remove Duplicates from Sorted Array
+### *description
+Follow up for ”Remove Duplicates”: What if duplicates are allowed at most twice? For example, Given sorted array                  ,Your function should return length = 5, and A is now            ### *solution  
 使用count来标识元素出现的次数，如果count=1，则出现一次写入nums[l] ; 否则跳过。如果没有重复性的数值同样写入nums[l]。如果是未排序的数组，需引入hashmap 记录出现的次数。
 
 ```
@@ -41,36 +41,7 @@ def removeElement(nums) :
 	return l
 			
 ``` 
-# 3 Search in rotated sorted array
-## * description
-Suppose a sorted array is rotated at some pivot unknown to you beforehand.(i.e.,               might become              ).You are given a target value to search. If found in the array return its index, otherwise return -1. You may assume no duplicate exists in the array.  
-## *solution  
-分析数据：分界点前后数据都是有序的，可以采用二分法进行查找.（_真值表_）判断mid 处于哪部分。
 
-```
-def search(nums,target) :  
-	low = 0
-	high = len(nums)-1
-	while (low <= high) :
-		mid = int(math.floor(low + high)/2)
-		if nums[mid] == target :
-			return mid
-		#mid 在分界值左边
-		if nums[l] <= nums[mid] :
-			if nums[low]> nums[high] and nums[mid] >target:
-				high = mid - 1
-			else
-				high = mid -1
-		
-		else :
-				# mid 在分界值右边
-				if nums[high] >= nums[mid] :
-					if nums[high] >= target and nums[mid] < target :
-						low = mid + 1
-					else :
-						high = mid - 1
-	return -1
-```
 
 
   	
