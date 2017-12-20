@@ -13,20 +13,17 @@ def search(nums,target) :
 		mid = int(math.floor(low + high)/2)
 		if nums[mid] == target :
 			return mid
-		#mid 在分界值左边
 		if nums[l] <= nums[mid] :
 			if nums[low]> nums[high] and nums[mid] >target:
 				high = mid - 1
 			else
 				high = mid -1
-		
 		else :
-				# mid 在分界值右边
-				if nums[high] >= nums[mid] :
-					if nums[high] >= target and nums[mid] < target :
-						low = mid + 1
-					else :
-						high = mid - 1
+			if nums[high] >= nums[mid] :
+				if nums[high] >= target and nums[mid] < target :
+					low = mid + 1
+				else :
+					high = mid - 1
 	return -1
 ```
 
