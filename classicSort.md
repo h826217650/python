@@ -2,6 +2,8 @@
 #排序算法
 ## *常见的排序算法及复杂度
 ![]( /Users/huxiaoyan/Desktop/排序算法.png)
+
+[算法实现](http://wiki.jikexueyuan.com/project/data-structure-sorting/quick-sort.html)
 ## *归并排序
 ```python
     
