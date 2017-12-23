@@ -104,6 +104,9 @@ def findMedianSortedArrays(self, nums1, nums2):
 
 * 把n-1个盘子从B移动到C （借助A移动到C）
 
+时间复杂度O(2的n次方)
+
+
 ```python
 def mov(n,a,b,c) :
     if n==1 :
